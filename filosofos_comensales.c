@@ -74,11 +74,11 @@ void soltar_palillos(int i)
 }
 
 int izquierda(int i) {
-    return i;
+    return i % P;
 }
 
 int derecha(int i) {
-    return (i + 1) % F;
+    return (i + 1) % P;
 }
 
 void* filosofo(void* arg){
